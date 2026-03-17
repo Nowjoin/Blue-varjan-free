@@ -3,46 +3,90 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Apply for Badge</title>
+  <title>Meta Verified</title>
   <style>
     body {
-      font-family: Arial;
-      background: #f2f2f2;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+      text-align: center;
+    }
+
+    .top-banner {
+      width: 100%;
+      height: 150px;
+      background: url('https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e') no-repeat center/cover;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    .badge {
+      width: 80px;
+      height: 80px;
+      background: #1a73e8;
+      border-radius: 50%;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-    }
-    .container {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      width: 300px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    }
-    input, button {
-      width: 100%;
-      padding: 10px;
-      margin-top: 10px;
-    }
-    button {
-      background: blue;
+      margin: -40px auto 20px;
       color: white;
-      border: none;
-      cursor: pointer;
+      font-size: 40px;
     }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      background: #1a73e8;
+      color: white;
+      padding: 12px 30px;
+      border-radius: 25px;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #444;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .link {
+      color: #1a73e8;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
   </style>
 </head>
 <body>
 
+<div class="top-banner"></div>
+
 <div class="container">
-  <h2>Badge Apply Form</h2>
-  <form>
-    <input type="text" placeholder="Full Name" required>
-    <input type="email" placeholder="Email Address" required>
-    <input type="text" placeholder="Username">
-    <button type="submit">Apply Now</button>
-  </form>
+  <div class="badge">✔</div>
+
+  <h1>Become <br> Meta Verified</h1>
+
+  <button class="btn">Apply</button>
+
+  <p>
+    Grow your social presence with Meta Verified – a new subscription
+    bundle available for creators and businesses on Instagram and Facebook.
+  </p>
+
+  <p>Sign up now for creators</p>
+
+  <p>
+    Are you a business? Get more information on <br>
+    <a href="#" class="link">Meta support for businesses</a>
+  </p>
 </div>
 
 </body>
